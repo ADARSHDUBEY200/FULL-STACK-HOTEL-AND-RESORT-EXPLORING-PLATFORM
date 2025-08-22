@@ -18,5 +18,4 @@ const marker = new mapboxgl.Marker({color:"red"})
     )
 )
 .addTo(map);
-console.log(coordinates);
-
+console.log(listing);

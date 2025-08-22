@@ -1,27 +1,34 @@
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          
-          <a class="nav-link" href="/listings">Explore</a>
-         
-         
-        </div>
+  <div class="container-fluid">
+    <a class="navbar-brand explore" href="/listings"><i class="fa-regular fa-compass fa-2xl"
+        style="color: rgb(255, 123, 0);"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
 
-        <div class="navbar-nav ms-auto"> 
-          <a class="nav-link" href="/listings/new">Airbnb your home </a>
-          <% if(!currUser){%>
-          <a class="nav-link"  href="/signup"><b>SignUp</b></a>
-          <a class="nav-link" href="/login"><b>Login</b></a>
-        <%}%>
-        <% if(currUser){%>
-          <a class="nav-link" href="/logout">LogOut</a>
-         <%}%>
+        <a class="text-decoration-none explore fs-5" href="/listings">Explore</a>
+
+
+      </div>
+
+      
+
+      <div class="navbar-nav ms-auto">
+        <div class="search-bar">
+        <input type="text" name="" id="" class="custom">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+        <div class="btn-gradient"><a class="text-decoration-none text-light" href="/listings/new">Airbnb your home </a>
         </div>
+        <% if(!currUser){%>
+          <div class="btn-gradient"><a class="text-decoration-none text-light" href="/login"><b>Login</b></a></div>
+          <%}%>
+            <% if(currUser){%>
+              <div class="btn-gradient"><a class="text-decoration-none text-light" href="/logout">LogOut</a></div>
+              <%}%>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>

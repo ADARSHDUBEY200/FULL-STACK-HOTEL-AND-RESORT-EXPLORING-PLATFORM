@@ -3,7 +3,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 
+}
+
+body::selection{
+    background-color: orange;
 }
 
 .container {
@@ -57,11 +62,68 @@ body {
     align-items: space-evenly;
 }
 
+.explore{
+    color : orange;
+}
+
+.toggle{
+    background: linear-gradient(to right, rgb(255, 128, 0), rgb(255, 170, 0));
+    height: 3rem;
+    width: 15rem;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid orange;
+    border-radius: 2rem;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 20rem;
+}
+
+.search-bar input{
+    padding: 0.3rem 8rem 0.3rem 0.3rem;
+    border-radius: 2rem 0rem 0rem 2rem;
+    border: 2px solid grey;
+    box-sizing: border-box;
+}
+
+.search-bar button{
+    padding:0.3rem 2rem 0.3rem 2rem;
+    border-radius: 0rem 2rem 2rem 0rem;
+    background:linear-gradient(to right, rgb(255, 128, 0), rgb(255, 170, 0)) ;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid grey;
+}
 /* CARDS */
 
-.listing-card {
+.listing-card{
     border: none !important;
+     margin-bottom: 2rem;
+}
+
+.listing-card-index {
+    /* border: 2px solid rgb(255, 153, 0); */
+    border-radius: 1.1rem;
     margin-bottom: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+}
+
+.listing-card-index:hover{
+    transform: scale(1.08);
+}
+
+.card-img-top-index {
+    border-radius: 1rem 1rem 0rem 0rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
 }
 
 .card-img-top {
@@ -71,12 +133,20 @@ body {
 }
 
 .card-body {
-    padding: 0 !important;
+    height: 50vh;
+    width: 100%;
+    margin-top: 1rem;
+    border: 2px solid orange;
+    border-radius: 2rem;
+    background-color: rgb(247, 248, 249);
+    padding: 2rem !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-text p {
+.card-text{
 
-    font-weight: 400 !important;
+    font-weight: 500 !important;
+    text-align: center;
 
 }
 
@@ -103,7 +173,49 @@ body {
 
 }
 
+.btn-gradient{
+    /* display: inline-block; */
+    background: linear-gradient(to right, rgb(255, 128, 0), rgb(255, 170, 0));
+    margin: 0.5rem;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 2rem; 
+    text-align: center;
+    line-height: 3rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-gradient:hover{
+    transform: scale(1.08);
+}
+
+.craousel-extra{
+    height: 70vh !important;
+    width: 100vw !important;
+}
+
+.card-new{
+    background-color: rgb(247, 249, 249);
+    padding-top: 1rem;
+    height: 80vh;
+    border-radius: 2rem;
+    border: 2px solid rgb(255, 157, 0);
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* EDIT PAGE */
+
+.card-edit{
+    background-color: rgb(247, 249, 249);
+    padding-top: 1rem;
+    height: 55vw;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    border: 2px solid rgb(255, 157, 0);
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 .edit-btn {
     background-color: #fe424d !important;
@@ -126,9 +238,33 @@ body {
     padding-right: 0;
 }
 
-/* STYLING FOR MAP */
+.relative{
+    position: relative;
+    left: 20rem;
+}
 
+/* STYLING FOR MAP */
 #map {
-    height: 40vh;
-    width: 40vw;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 2rem; 
+    border: 2px solid orange;
+}
+
+.custom:focus {
+    outline: 2px solid #FF8C00; /* your preferred color */
+    /* outline-offset: 2px;        optional: adds space between outline and element */
+    border-color: #FF8C00;      /* optional: changes border color as well */
+    box-shadow: 0 0 5px #FF8C00;
+}
+
+.delete-btn{
+    background-color: rgb(255, 123, 0);
+    border: none;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover{
+    transform: scale(1.08);
 }

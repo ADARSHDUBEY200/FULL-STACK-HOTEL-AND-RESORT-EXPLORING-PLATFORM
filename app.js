@@ -1,7 +1,6 @@
 if(process.env.NODE_ENV !="production"){
     require("dotenv").config();
 }
-
 const express=require("express");
 const app=express();
 const mongoose=require("mongoose");
@@ -23,18 +22,16 @@ const User=require("./models/user.js")
 
 // const MONGO_URL= "mongodb://127.0.0.1:27017/wanderlust";
 const dbUrl=process.env.ATLASDB_URL;
+async function main(){
+    await mongoose.connect(dbUrl);
+};
 
-main()
-.then((res)=>{
-    console.log(res);
+main().then((res)=>{
+    console.log("this is the message" + res);
 })
 .catch((err)=>{
     console.log(err);
 });
-
-async function main(){
-    await mongoose.connect(dbUrl);
-};
 
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
@@ -64,7 +61,7 @@ const sessionOptions={
     cookie:{
         expires:Date.now()+ 7 * 24 * 60 * 60 * 1000,
         maxAge:7 * 24 * 60 * 60 * 1000,
-        httpOnlu:true,
+        httpOnly:true,
     }
 }
 
@@ -119,6 +116,7 @@ app.use((err,req,res,next)=>{
     // res.status(statuscode).send(message);
 });
 
-app.listen(8080,()=>{
-    console.log("server is working ");
+app.listen(8080, ()=>{
+    console.log("server is working");
+   
 });
