@@ -2,11 +2,11 @@
 
 ![License](https://img.shields.io/badge/license-ISC-green)
 
-## 📝 Description
+## 📝 Overview
 
-Embark on a virtual journey with the FULL-STACK-HOTEL-AND-RESORT-EXPLORING-PLATFORM, a web application meticulously crafted with Express.js. This platform offers a seamless and intuitive way to discover and explore a diverse collection of hotels and resorts. While details are currently limited, expect core features centered around web-based browsing and exploration of potential vacation destinations. Imagine a user-friendly interface empowering you to effortlessly research accommodations and plan your next getaway. Stay tuned for future expansions, promising even more exciting functionalities!
+The Hotel & Resort Exploring Platform is a full-stack MERN application designed for seamless hotel discovery and exploring , creting and giving reviews. Users can explore detailed listings, filter by location, price, and amenities, and view interactive maps powered by Mapbox. Rich media content is managed through Cloudinary, ensuring fast and optimized image delivery. The platform features secure authentication with JWT, user reviews, ratings, favorites, and a personalized dashboard. Admins can manage listings and bookings with role-based access. Built using Node.js, Express.js, React, and MongoDB, and containerized with Docker, it delivers a scalable, secure, and responsive experience across devices.
+--- 
 
-# ✨ Features
 ## 🎯 Core Platform Functionality
 
 - **Hotel & Resort Listings** – Browse and explore a wide variety of hotels and resorts with detailed descriptions.
@@ -256,7 +256,7 @@ website at: http://localhost:8080
 Install dependencies
 ```bash
 # App dependencies
-npm install
+npm install --force
 ```
 Set up environment variables (same as Docker option)
 
@@ -301,5 +301,3 @@ Please ensure your code follows the project's style guidelines and includes test
 
 This project is licensed under the ISC License.
 
----
-*This README was generated with ❤️ by ReadmeBuddy*
