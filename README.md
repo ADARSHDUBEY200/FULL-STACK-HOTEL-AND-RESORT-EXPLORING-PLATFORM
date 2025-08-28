@@ -1,6 +1,6 @@
 # FULL-STACK-HOTEL-AND-RESORT-EXPLORING-PLATFORM
 
-![License](https://img.shields.io/badge/license-ISC-green)
+[![Website](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge\&logo=vercel)]([https://full-stack-real-time-video-conferencing-5r1k.onrender.com](https://full-stack-hotel-and-resort-exploring.onrender.com/listings))
 
 ## 📝 Overview
 
