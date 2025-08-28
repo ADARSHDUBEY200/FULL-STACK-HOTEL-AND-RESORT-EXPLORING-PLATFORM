@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-ISC-green)
 
 ## 📝 Overview
-
+---
 The Hotel & Resort Exploring Platform is a full-stack MERN application designed for seamless hotel discovery and exploring , creting and giving reviews. Users can explore detailed listings, filter by location, price, and amenities, and view interactive maps powered by Mapbox. Rich media content is managed through Cloudinary, ensuring fast and optimized image delivery. The platform features secure authentication with JWT, user reviews, ratings, favorites, and a personalized dashboard. Admins can manage listings and bookings with role-based access. Built using Node.js, Express.js, React, and MongoDB, and containerized with Docker, it delivers a scalable, secure, and responsive experience across devices.
 --- 
 
